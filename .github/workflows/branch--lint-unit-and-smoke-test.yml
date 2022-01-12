@@ -45,9 +45,6 @@ jobs:
       - name: Build dependencies
         run: yarn build:dependencies
 
-      - name: Install pa11y
-        run: yarn ${{matrix.app}} dlx pa11y-ci
-
       - name: Lint
         run: yarn ${{matrix.app}} lint
 
@@ -116,8 +113,6 @@ jobs:
         run: docker-compose up -d
       - name: Install smoke tests dependencies
         run: yarn workspaces focus @xgovformbuilder/test
-      - name: Install pa11y
-        run: npm install -g pa11y-ci
       - name: Check designer container is running
         run: |
           docker ps
@@ -131,9 +126,7 @@ jobs:
           yarn smoke-tests/designer smoke-test-headless
           ls -lah smoke-tests/designer/reports/
       - name: Run pa11y
-        run: | 
-          cd designer 
-          npx pa11y-ci
+        run: yarn ${{matrix.app}} dlx pa11y-ci
       - name: "Tar files"
         if: ${{ success() || failure() }}
         run: tar -cvf smoke-tests.tar smoke-tests/designer/reports
