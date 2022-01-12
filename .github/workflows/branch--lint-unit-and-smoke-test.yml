@@ -46,7 +46,7 @@ jobs:
         run: yarn build:dependencies
 
       - name: Install pa11y
-        run: yarn {{matrix.app}} dlx pa11y-ci
+        run: yarn ${{matrix.app}} dlx pa11y-ci
 
       - name: Lint
         run: yarn ${{matrix.app}} lint
