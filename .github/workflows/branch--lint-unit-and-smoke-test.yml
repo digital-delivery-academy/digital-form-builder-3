@@ -126,8 +126,8 @@ jobs:
           yarn smoke-tests/designer smoke-test-headless
           ls -lah smoke-tests/designer/reports/
 
-      - name: Lighthous Test
-        run: yarn designer dlx pa11y-ci
+      - name: Lighthouse
+        run: yarn runner dlx lighthouse-ci http://localhost:3009/components/all-components
       - name: "Tar files"
         if: ${{ success() || failure() }}
         run: tar -cvf smoke-tests.tar smoke-tests/designer/reports
