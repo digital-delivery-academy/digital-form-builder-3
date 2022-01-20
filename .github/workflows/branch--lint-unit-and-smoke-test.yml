@@ -126,8 +126,10 @@ jobs:
           yarn smoke-tests/designer smoke-test-headless
           ls -lah smoke-tests/designer/reports/
 
-      - name: Lighthouse
-        run: yarn runner dlx lighthouse-ci http://localhost:3009/components/all-components
+      - name: run Lighthouse CI
+        run: |
+          npm install -g @lhci/cli@0.8.x
+          lhci autorun
       - name: "Tar files"
         if: ${{ success() || failure() }}
         run: tar -cvf smoke-tests.tar smoke-tests/designer/reports
