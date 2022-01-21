@@ -14,8 +14,8 @@ module.exports = {
       preset: "lighthouse:recommended",
     },
     upload: {
-      //target: "filesystem",
-      target: "temporary-public-storage",
+      target: "filesystem",
+      //target: "temporary-public-storage",
     },
   },
 };

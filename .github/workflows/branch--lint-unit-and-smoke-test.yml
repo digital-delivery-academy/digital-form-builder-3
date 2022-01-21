@@ -126,16 +126,6 @@ jobs:
           yarn smoke-tests/designer smoke-test-headless
           ls -lah smoke-tests/designer/reports/
 
-      - uses: actions/checkout@v2
-      - name: Audit URLs using Lighthouse
-        uses: treosh/lighthouse-ci-action@v8
-        with:
-          urls: |
-            https://example.com/
-            https://example.com/blog
-          budgetPath: ./budget.json # test performance budgets
-          uploadArtifacts: true # save results as an action artifacts
-          temporaryPublicStorage: true # upload lighthouse report to the temporary storage
       - name: Run Lighthouse CI
         run: |
           npm install -g @lhci/cli@0.8.x
