@@ -129,7 +129,7 @@ jobs:
         uses: treosh/lighthouse-ci-action@v8
         with:
           urls: "https://exterkamp.codes/"
-          configPath: "./lighthouserc.json"
+          configPath: "/lighthouserc.json"
       - name: Run Lighthouse CI
         run: |
           npm install -g @lhci/cli@0.8.x
