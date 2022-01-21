@@ -11,6 +11,9 @@ module.exports = {
       startServerCommand: "",
     },
     assert: {
+      assertions: {
+        "first-contentful-paint": ["error", { minScore: 0.6 }],
+      },
       preset: "lighthouse:recommended",
     },
     upload: {
