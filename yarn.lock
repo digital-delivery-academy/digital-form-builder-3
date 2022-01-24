@@ -2108,7 +2108,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hapi/address@npm:2.x.x, @hapi/address@npm:^2.1.2":
+"@hapi/address@npm:^2.1.2":
   version: 2.1.4
   resolution: "@hapi/address@npm:2.1.4"
   checksum: 5dc5d0d3d6aad953bef59c5f24af704ae349dce626460eb2df93bd1e4b560136e354f92ce1c573292dfc7edce84189859794d28381711b50f738e67042081278
@@ -2241,17 +2241,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hapi/bourne@npm:1.x.x, @hapi/bourne@npm:^1.3.2":
-  version: 1.3.2
-  resolution: "@hapi/bourne@npm:1.3.2"
-  checksum: bc23796d94afbca6bf691161d181bf005e86eac3f16fa4a11c38ca1acc9ffabf4e83791a98e9234bd09539ac013675bb53ea2de119373f9e9349f3b94312b76d
-  languageName: node
-  linkType: hard
-
 "@hapi/bourne@npm:2.x.x, @hapi/bourne@npm:^2.0.0":
   version: 2.0.0
   resolution: "@hapi/bourne@npm:2.0.0"
   checksum: 97a3e6d44c63debbb170f5966a8076022e2855f1c4fa81edc8c6fd255ba56ce047c3dcce5055858188610eafd77e6420c67ece7fd17e3192830e2fbca7766fd0
+  languageName: node
+  linkType: hard
+
+"@hapi/bourne@npm:^1.3.2":
+  version: 1.3.2
+  resolution: "@hapi/bourne@npm:1.3.2"
+  checksum: bc23796d94afbca6bf691161d181bf005e86eac3f16fa4a11c38ca1acc9ffabf4e83791a98e9234bd09539ac013675bb53ea2de119373f9e9349f3b94312b76d
   languageName: node
   linkType: hard
 
@@ -2500,18 +2500,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hapi/joi@npm:15.x.x":
-  version: 15.1.1
-  resolution: "@hapi/joi@npm:15.1.1"
-  dependencies:
-    "@hapi/address": 2.x.x
-    "@hapi/bourne": 1.x.x
-    "@hapi/hoek": 8.x.x
-    "@hapi/topo": 3.x.x
-  checksum: 7edbb0d5a5c1ff376b66243427a3b98a559e9ea89f7d40ee55916e0519bc1be56a9ac69f1e446a2c39c153fe835c57e4ee71297d4266b0ca82c49f7a2e90f681
-  languageName: node
-  linkType: hard
-
 "@hapi/joi@npm:16.x.x":
   version: 16.1.8
   resolution: "@hapi/joi@npm:16.1.8"
@@ -2745,21 +2733,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hapi/topo@npm:3.x.x, @hapi/topo@npm:^3.1.3":
-  version: 3.1.6
-  resolution: "@hapi/topo@npm:3.1.6"
-  dependencies:
-    "@hapi/hoek": ^8.3.0
-  checksum: 4550d3d7498a203ce5c0e53753eb9f510aa2b74c08bfaf7d7c4676a0943b27d72f22297ff006e8396eb74e6b73154ebf98feab19c199b0768a084a777d024a50
-  languageName: node
-  linkType: hard
-
 "@hapi/topo@npm:5.x.x, @hapi/topo@npm:^5.0.0":
   version: 5.0.0
   resolution: "@hapi/topo@npm:5.0.0"
   dependencies:
     "@hapi/hoek": ^9.0.0
   checksum: f92797d5ef54bb801a3591a118ea483ed5a6b41cdd1aaa6f7bf427b64b5f76056bc7063447adf43be8f94b04408228cce12963ea498b8da8f9e01d01c78710ac
+  languageName: node
+  linkType: hard
+
+"@hapi/topo@npm:^3.1.3":
+  version: 3.1.6
+  resolution: "@hapi/topo@npm:3.1.6"
+  dependencies:
+    "@hapi/hoek": ^8.3.0
+  checksum: 4550d3d7498a203ce5c0e53753eb9f510aa2b74c08bfaf7d7c4676a0943b27d72f22297ff006e8396eb74e6b73154ebf98feab19c199b0768a084a777d024a50
   languageName: node
   linkType: hard
 
@@ -5133,7 +5121,7 @@ __metadata:
     babel-eslint: ^10.1.0
     babel-plugin-module-name-mapper: ^1.2.0
     blankie: 5.0.0
-    blipp: 4.0.1
+    blipp: 4.0.2
     boom: 7.3.0
     btoa: ^1.2.1
     cheerio: 1.0.0-rc.3
@@ -6519,15 +6507,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"blipp@npm:4.0.1":
-  version: 4.0.1
-  resolution: "blipp@npm:4.0.1"
+"blipp@npm:4.0.2":
+  version: 4.0.2
+  resolution: "blipp@npm:4.0.2"
   dependencies:
-    "@hapi/hoek": 8.x.x
-    "@hapi/joi": 15.x.x
-    chalk: 2.x.x
+    "@hapi/hoek": 9.x.x
+    chalk: 4.x.x
     easy-table: 1.x.x
-  checksum: 20bcdd37e2ba3045e746e0898dc27057438d21c6101d970656dcb47d6614aaafc8226e7e82a10eb6cd0467daaffc22b5dfddef528ab23c1f95b2a2b63f27a4e6
+    joi: 17.x.x
+  checksum: 5f25b3d7293ba564dc91d9022a4187d8332c76244f98d812bfa9135520a52776b8ca9c9dc3e84367da1b7d20d4656585d17b8fc6a80a81e1bf21580527fb99ad
   languageName: node
   linkType: hard
 
@@ -7251,7 +7239,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:2.4.2, chalk@npm:2.x.x, chalk@npm:^2.0.0, chalk@npm:^2.1.0, chalk@npm:^2.3.0, chalk@npm:^2.4.2":
+"chalk@npm:2.4.2, chalk@npm:^2.0.0, chalk@npm:^2.1.0, chalk@npm:^2.3.0, chalk@npm:^2.4.2":
   version: 2.4.2
   resolution: "chalk@npm:2.4.2"
   dependencies:
@@ -7259,6 +7247,16 @@ __metadata:
     escape-string-regexp: ^1.0.5
     supports-color: ^5.3.0
   checksum: 22c7b7b5bc761c882bb6516454a1a671923f1c53ff972860065aa0b28a195f230163c1d46ee88bcc7a03e5539177d896457d8bc727de7f244c6e87032743038e
+  languageName: node
+  linkType: hard
+
+"chalk@npm:4.x.x":
+  version: 4.1.2
+  resolution: "chalk@npm:4.1.2"
+  dependencies:
+    ansi-styles: ^4.1.0
+    supports-color: ^7.1.0
+  checksum: e3901b97d953991712bf0b941d586175be7ca5da56a97d25187e07453c6b26cae0ac8d9c7aa9e87e7c5c986fff870771b3a8e2705b3becda868829e2e12c2a65
   languageName: node
   linkType: hard
 
