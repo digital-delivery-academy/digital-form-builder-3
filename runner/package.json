@@ -69,7 +69,7 @@
     "govuk-frontend": "^3.13.0",
     "hapi-pino": "8.0.0",
     "hapi-pulse": "3.0.0",
-    "hapi-rate-limit": "4.1.0",
+    "hapi-rate-limit": "5.0.1",
     "hapi-require-https": "5.0.0",
     "hmpo-components": "2.6.5",
     "ioredis": "4.16.1",

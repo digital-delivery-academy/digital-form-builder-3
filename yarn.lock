@@ -2193,21 +2193,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hapi/boom@npm:^8.0.1":
-  version: 8.0.1
-  resolution: "@hapi/boom@npm:8.0.1"
-  dependencies:
-    "@hapi/hoek": 8.x.x
-  checksum: bfa2a10d77e8ca1ebe3a3d56c9fa00e6c885b36f7308ed961df7d9013a22eead2cc0579c855954a4e546a7e15d7745cac79e7337544980c9290a866bdb591afd
-  languageName: node
-  linkType: hard
-
 "@hapi/boom@npm:^9.0.0":
   version: 9.1.2
   resolution: "@hapi/boom@npm:9.1.2"
   dependencies:
     "@hapi/hoek": 9.x.x
   checksum: abf911cc05dcef8611166803ed2d9c193e958793fe3281a5b00f3fe47eb741b0cffa17a98741773a7bf5b73e9c5c112f04a6a71bb8bf76f3382fa62261279e32
+  languageName: node
+  linkType: hard
+
+"@hapi/boom@npm:^9.1.0":
+  version: 9.1.4
+  resolution: "@hapi/boom@npm:9.1.4"
+  dependencies:
+    "@hapi/hoek": 9.x.x
+  checksum: ee47b76119c27ebc55b4cfdcd1a899672c380122a10598ec3c704a31d578d74a21d10729e8c6fceafb1996480b240c363a34469472868523a6ade59577588af2
   languageName: node
   linkType: hard
 
@@ -2273,6 +2273,16 @@ __metadata:
     "@hapi/boom": 9.x.x
     "@hapi/hoek": 9.x.x
   checksum: c42b6729fae6b8d170184b7a27fb64b8b3aa05294e91b3af866a5383061e28140ec93185af1bdd81e1126adaa82cef3fee720c2bd834ddc8744c9fbcdc93f6e3
+  languageName: node
+  linkType: hard
+
+"@hapi/catbox-memory@npm:^5.0.1":
+  version: 5.0.1
+  resolution: "@hapi/catbox-memory@npm:5.0.1"
+  dependencies:
+    "@hapi/boom": 9.x.x
+    "@hapi/hoek": 9.x.x
+  checksum: 2f6e6ad2d712e87e0f8fc0bb845a3172fd2f1ebea23f7a6bd8d8ef7c7610859bf61cbf160320d2c0b8799d4f0f69e7061bd099a0111883dd70c990016ab23ff9
   languageName: node
   linkType: hard
 
@@ -2436,7 +2446,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hapi/hoek@npm:8.x.x, @hapi/hoek@npm:^8.2.4, @hapi/hoek@npm:^8.3.0, @hapi/hoek@npm:^8.3.1, @hapi/hoek@npm:^8.5.0":
+"@hapi/hoek@npm:8.x.x, @hapi/hoek@npm:^8.2.4, @hapi/hoek@npm:^8.3.0, @hapi/hoek@npm:^8.3.1":
   version: 8.5.1
   resolution: "@hapi/hoek@npm:8.5.1"
   checksum: 17bf9a0b6f2f9ecb248824dab838c66c50b16b00b1d3785233fafd5abacb06cc6cdcbd6f4c7be87babb227fc02fff46ad1c23de3f5b6f48ffe36b6aac829d82c
@@ -2503,7 +2513,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hapi/joi@npm:16.x.x, @hapi/joi@npm:^16.1.4":
+"@hapi/joi@npm:16.x.x":
   version: 16.1.8
   resolution: "@hapi/joi@npm:16.1.8"
   dependencies:
@@ -3288,6 +3298,15 @@ __metadata:
   dependencies:
     "@hapi/hoek": ^9.0.0
   checksum: 13f0a6b4178b03d7c0062894312313892d9a728987a5d07d43cb42c04bcdf55cd02092eb6f09ffb8d78a1dfae8cf5ce6c9b4ad66934771ea6a18e2b3fcd752d9
+  languageName: node
+  linkType: hard
+
+"@sideway/address@npm:^4.1.3":
+  version: 4.1.3
+  resolution: "@sideway/address@npm:4.1.3"
+  dependencies:
+    "@hapi/hoek": ^9.0.0
+  checksum: 1e0329308caf31b4c147d3d6825fc4830439d03fbcbbd485a373c0a44b07006aa45e74331043d02aad706e0bd1caf20c7989d2a7d141621a953dd889042c27af
   languageName: node
   linkType: hard
 
@@ -5117,7 +5136,7 @@ __metadata:
     govuk-frontend: ^3.13.0
     hapi-pino: 8.0.0
     hapi-pulse: 3.0.0
-    hapi-rate-limit: 4.1.0
+    hapi-rate-limit: 5.0.1
     hapi-require-https: 5.0.0
     hmpo-components: 2.6.5
     ioredis: 4.16.1
@@ -12583,16 +12602,17 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"hapi-rate-limit@npm:4.1.0":
-  version: 4.1.0
-  resolution: "hapi-rate-limit@npm:4.1.0"
+"hapi-rate-limit@npm:5.0.1":
+  version: 5.0.1
+  resolution: "hapi-rate-limit@npm:5.0.1"
   dependencies:
-    "@hapi/boom": ^8.0.1
-    "@hapi/hoek": ^8.5.0
-    "@hapi/joi": ^16.1.4
+    "@hapi/boom": ^9.1.0
+    "@hapi/catbox-memory": ^5.0.1
+    "@hapi/hoek": ^9.0.3
+    joi: ^17.4.0
   peerDependencies:
     "@hapi/hapi": ">=18.0.0"
-  checksum: 8929d63dd7e1b439b6b831b0c509cefba52addf5a7d2ebbcc2054d0bdae2c0b4b08b96450a73bcb5562fa3e6b38fdccf86081c0fb1578c3c1351ede7ee74e630
+  checksum: d9b0c8760815d529d7790279ffc0ffeb8ea2107a2f7614f14fd114942d169268463bda7b2f8815a90c3a01a07e2dced3afc6a5c3dc16ff34edc80924476b2843
   languageName: node
   linkType: hard
 
@@ -14990,6 +15010,19 @@ fsevents@^1.2.7:
     "@sideway/formula": ^3.0.0
     "@sideway/pinpoint": ^2.0.0
   checksum: 3a2a6a8df5df408b33661d61abf6389f21d71478748daebe4edf4be2176548a70396601fcf2fd4fc0bc44fc12ab67fa72de310509db47579ad21bca0f2e0611b
+  languageName: node
+  linkType: hard
+
+"joi@npm:^17.4.0":
+  version: 17.5.0
+  resolution: "joi@npm:17.5.0"
+  dependencies:
+    "@hapi/hoek": ^9.0.0
+    "@hapi/topo": ^5.0.0
+    "@sideway/address": ^4.1.3
+    "@sideway/formula": ^3.0.0
+    "@sideway/pinpoint": ^2.0.0
+  checksum: 50fa3512752ce049390b6d953c1b70d441e6376ebd126f4a6069cf0e9374867da04abaf7a5fee4d8506565b1445e2de2aaa0247b22db9e73badcbac2b6984e07
   languageName: node
   linkType: hard
 
