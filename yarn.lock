@@ -2666,13 +2666,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hapi/scooter@npm:6.0.0":
-  version: 6.0.0
-  resolution: "@hapi/scooter@npm:6.0.0"
+"@hapi/scooter@npm:6.0.1":
+  version: 6.0.1
+  resolution: "@hapi/scooter@npm:6.0.1"
   dependencies:
-    semver: 6.x.x
+    semver: 7.x.x
     useragent: 2.x.x
-  checksum: 8afba8eeec94af95ea51ab56a535a9146703394f1aef6b15544a39f493baac9971da626e5952e3a40053539ca3ef9790306a0e99559f0330a72137ef731f1333
+  checksum: c1161344734c6e62ff6a422ab6a39d9d26be7c8d2d7fe78e163202191d4d0425bea21dda733a639595861dbab8c69578b0d8b7d8be7e3d240ac43a94ef3f1ed7
   languageName: node
   linkType: hard
 
@@ -4913,7 +4913,7 @@ __metadata:
     "@hapi/hapi": ^20.0.3
     "@hapi/inert": ^6.0.1
     "@hapi/lab": ^24.0.0
-    "@hapi/scooter": 6.0.0
+    "@hapi/scooter": 6.0.1
     "@hapi/wreck": 17.0.0
     "@testing-library/jest-dom": ^5.11.6
     "@testing-library/react": ^11.2.2
@@ -5102,7 +5102,7 @@ __metadata:
     "@hapi/hapi": ^20.0.3
     "@hapi/inert": 5.2.2
     "@hapi/lab": 24.0.0
-    "@hapi/scooter": 6.0.0
+    "@hapi/scooter": 6.0.1
     "@hapi/wreck": 17.0.0
     "@hapi/yar": ^10.1.1
     "@types/hapi": ^18.0.4
@@ -20905,15 +20905,6 @@ resolve@^1.1.6:
   languageName: node
   linkType: hard
 
-"semver@npm:6.x.x, semver@npm:^6.0.0, semver@npm:^6.1.0, semver@npm:^6.1.2, semver@npm:^6.2.0, semver@npm:^6.3.0":
-  version: 6.3.0
-  resolution: "semver@npm:6.3.0"
-  bin:
-    semver: ./bin/semver.js
-  checksum: f0d155c06a67cc7e500c92d929339f1c6efd4ce9fe398aee6acc00a2333489cca0f5b4e76ee7292beba237fcca4b5a3d4a6153471f105f56299801bdab37289f
-  languageName: node
-  linkType: hard
-
 "semver@npm:7.0.0":
   version: 7.0.0
   resolution: "semver@npm:7.0.0"
@@ -20931,6 +20922,26 @@ resolve@^1.1.6:
   bin:
     semver: bin/semver.js
   checksum: f2c7f9aeb976d1484b2f39aa7afc8332a1d21fd32ca4a6fbf650e1423455ebf3e7029f6e2e7ba0cd71935b85942521f1ec25b6cc2c031b953c8ca4ff2d7a823d
+  languageName: node
+  linkType: hard
+
+"semver@npm:7.x.x":
+  version: 7.3.5
+  resolution: "semver@npm:7.3.5"
+  dependencies:
+    lru-cache: ^6.0.0
+  bin:
+    semver: bin/semver.js
+  checksum: c53624ddf4b9779bcbf55a1eb8b37074cc44bfeca416f3cc263429408202a8a3c59b00eef8c647d697303bc39b95c022a5c61959221d3814bfb1270ff7c14986
+  languageName: node
+  linkType: hard
+
+"semver@npm:^6.0.0, semver@npm:^6.1.0, semver@npm:^6.1.2, semver@npm:^6.2.0, semver@npm:^6.3.0":
+  version: 6.3.0
+  resolution: "semver@npm:6.3.0"
+  bin:
+    semver: ./bin/semver.js
+  checksum: f0d155c06a67cc7e500c92d929339f1c6efd4ce9fe398aee6acc00a2333489cca0f5b4e76ee7292beba237fcca4b5a3d4a6153471f105f56299801bdab37289f
   languageName: node
   linkType: hard
 
