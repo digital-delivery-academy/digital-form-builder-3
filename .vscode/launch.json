@@ -21,6 +21,7 @@
             "args": [
                 "--inspect=9227",
                 "--respawn",
+                "--no-notify",
                 "--transpile-only",
                 "./server/index.ts"
             ],
@@ -32,5 +33,23 @@
             "internalConsoleOptions": "openOnSessionStart",
             "port": 9227
         },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch and debug Runner",
+            "cwd": "${workspaceFolder}/runner",
+            "program": "${workspaceRoot}/node_modules/.bin/nodemon",
+            "args": [
+                "--inspect=9228",
+                "dist/index.js"
+            ],
+            "env": {
+                "NODE_ENV": "development",
+                "PREVIEW_MODE": "true"
+            },
+            "protocol": "inspector",
+            "internalConsoleOptions": "openOnSessionStart",
+            "port": 9227
+        }
     ]
 }
