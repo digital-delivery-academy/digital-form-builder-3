@@ -177,7 +177,7 @@ export class SummaryPageController extends PageController {
         !summaryViewModel.fees ||
         (summaryViewModel.fees.details ?? []).length === 0
       ) {
-        return redirectTo(request, h, `/${request.params.id}/status`);
+        return redirectTo(request, h, `/${request.params.id}/confirmation`);
       }
 
       // user must pay for service

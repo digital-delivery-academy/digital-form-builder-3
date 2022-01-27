@@ -27,6 +27,19 @@
       "path": "/summary",
       "controller": "./pages/summary.js",
       "components": []
+    },
+    {
+      "path": "/confirmation",
+      "title": "Confirmation",
+      "controller": "ConfirmationPageController",
+      "components": [
+        {
+          "options": {},
+          "type": "TextField",
+          "title": "Application complete",
+          "schema": {}
+        }
+      ]
     }
   ],
   "lists": [],
