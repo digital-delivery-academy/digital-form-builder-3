@@ -101,7 +101,7 @@ button.govuk-link {
 @include govuk-media-query($from: tablet) {
   .menu {
     position: fixed;
-    top: 50px;
+    top: 45px;
     padding: 8px;
     z-index: 999;
     background-color: #fff;
