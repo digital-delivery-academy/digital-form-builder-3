@@ -11,6 +11,7 @@ import {
   allInputs,
   inputsAccessibleAt,
   hasConditions as dataHasConditions,
+  allInputsForCurrentPage,
 } from "../data";
 
 interface Props {
@@ -54,9 +55,14 @@ class SelectConditions extends React.Component<Props, State> {
 
   fieldsForPath(path: string) {
     const { data } = this.context;
-    const inputs = path
+    const inputsa = path
       ? inputsAccessibleAt(data, path)
       : allInputs(data) ?? [];
+
+    const testing = allInputs(data);
+
+    const inputs = allInputsForCurrentPage(data, path);
+
     return inputs
       .map((input) => ({
         label: input.title,

@@ -28,6 +28,7 @@ function assertInlineConditionFlyoutNotDisplayed(wrapper) {
   expect(inlineConditionsFlyout.prop("show")).to.equal(false);
 }
 
+//These are being skiped, might be failing du to functionality not work, why skip though? Just to get the pipeline working?
 suite.skip("Select conditions", () => {
   const data = {
     inputsAccessibleAt: sinon.stub(),
