@@ -14,6 +14,7 @@ import {
   findList,
   inputsAccessibleAt,
   updateCondition,
+  allInputsForCurrentPage,
 } from "../data";
 import randomId from "../randomId";
 
@@ -80,7 +81,9 @@ export class InlineConditions extends React.Component<Props, State> {
   fieldsForPath = (path) => {
     const { data } = this.context;
 
-    const inputs = !!path ? inputsAccessibleAt(data, path) : allInputs(data);
+    const inputsa = !!path ? inputsAccessibleAt(data, path) : allInputs(data);
+
+    const inputs = allInputsForCurrentPage(data, path);
 
     const fieldInputs = inputs.map((input) => {
       const label = [
