@@ -55,13 +55,13 @@ class SelectConditions extends React.Component<Props, State> {
 
   fieldsForPath(path: string) {
     const { data } = this.context;
-    const inputsa = path
+    const inputs = path
       ? inputsAccessibleAt(data, path)
       : allInputs(data) ?? [];
 
     const testing = allInputs(data);
 
-    const inputs = allInputsForCurrentPage(data, path);
+    const inputss = allInputsForCurrentPage(data, path);
 
     return inputs
       .map((input) => ({
@@ -73,6 +73,24 @@ class SelectConditions extends React.Component<Props, State> {
         obj[item.name] = item;
         return obj;
       }, {});
+  }
+
+  // code smell
+  conditionsForPath() {
+    const { data } = this.context;
+    const { fields = [] } = data;
+    const { conditions = [] } = data;
+    const returnCon: ConditionsArray[] = [];
+    // for(var i =0; i < fields.length; i++) {
+    //   var name = fields[i].name;
+    //   for(var j = 0; j < conditions.length; j++) {
+    //     for(var k = 0; conditions[j].value.conditions.length; k++){
+    //       var fieldName = conditions[j].value.conditions[k].field.name;
+    //       if (name == fieldName)
+    //       returnCon.push(conditions[j]);
+    //     }
+    //   }
+    // }
   }
 
   onClickDefineCondition = (e) => {
