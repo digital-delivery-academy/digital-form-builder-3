@@ -123,7 +123,7 @@ export default function Menu({ updateDownloadedAt, id }: Props) {
       )}
       {outputs.isVisible && (
         <Flyout title="Edit Outputs" onHide={outputs.hide} width="xlarge">
-          <OutputsEdit/>
+          <OutputsEdit />
         </Flyout>
       )}
 

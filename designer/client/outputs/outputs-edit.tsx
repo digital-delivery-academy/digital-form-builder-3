@@ -5,6 +5,7 @@ import { DataContext } from "../context";
 import { Output } from "./types";
 
 type Props = {
+  
 };
 
 type State = {
@@ -44,7 +45,6 @@ class OutputsEdit extends React.Component<Props, State> {
   };
 
   render() {
-
     const data = this.context;
     const { outputs } = data;
     const { output, id, showAddOutput } = this.state; 
