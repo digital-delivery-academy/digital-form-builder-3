@@ -183,7 +183,7 @@ export default function Menu({ updateDownloadedAt, id }: Props) {
               </ul>
               {selectedTab === Tabs.model && (
                 <section className="govuk-tabs__panel" data-testid="tab-model">
-                  <DataPrettyPrint data={data} />
+                  <DataPrettyPrint />
                 </section>
               )}
               {selectedTab === Tabs.json && (
