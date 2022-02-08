@@ -63,7 +63,6 @@ export default function Menu({ updateDownloadedAt, id }: Props) {
         <button data-testid="menu-outputs" onClick={outputs.show}>
           {i18n("menu.outputs")}
         </button>
-
         <button data-testid="menu-fees" onClick={fees.show}>
           {i18n("menu.fees")}
         </button>
@@ -73,7 +72,6 @@ export default function Menu({ updateDownloadedAt, id }: Props) {
         >
           {i18n("menu.summaryBehaviour")}
         </button>
-
         <button onClick={summary.show} data-testid="menu-summary">
           {i18n("menu.summary")}
         </button>
