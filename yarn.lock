@@ -4951,7 +4951,7 @@ __metadata:
     lcov-result-merger: ^3.1.0
     lodash: ^4.17.21
     mini-css-extract-plugin: ^0.11.2
-    moment-timezone: ^0.5.31
+    moment-timezone: ^0.5.39
     msw: ^0.25.0
     nanoid: ^3.1.12
     nodemon: ^2.0.6
@@ -16816,12 +16816,12 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"moment-timezone@npm:^0.5.31":
-  version: 0.5.32
-  resolution: "moment-timezone@npm:0.5.32"
+"moment-timezone@npm:^0.5.39":
+  version: 0.5.39
+  resolution: "moment-timezone@npm:0.5.39"
   dependencies:
     moment: ">= 2.9.0"
-  checksum: 1e5ff2335e310fabdebdde7c0d4b97062bb242c14926e8f79b06fdf8ad356db05d76f75add80ad1b33a68bcd330e265a1ca8b5bbdf1ea2a9c2b5df76d4e12d52
+  checksum: bc45622897bd66e3cd0f2594c86d31f1376e40e6af785ae49fced67d0f62052d26ed116a1b2bb43de3c80f0bcbc4a2a2d576695f0c2bdf6e836d1eadb30c5624
   languageName: node
   linkType: hard
 
