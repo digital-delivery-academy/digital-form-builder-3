@@ -4947,7 +4947,7 @@ __metadata:
     jest: ^26.6.3
     joi: 17.2.1
     jsdom: ^16.2.2
-    jszip: ^3.6.0
+    jszip: ^3.10.1
     lcov-result-merger: ^3.1.0
     lodash: ^4.17.21
     mini-css-extract-plugin: ^0.11.2
@@ -15365,15 +15365,15 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"jszip@npm:^3.6.0":
-  version: 3.6.0
-  resolution: "jszip@npm:3.6.0"
+"jszip@npm:^3.10.1":
+  version: 3.10.1
+  resolution: "jszip@npm:3.10.1"
   dependencies:
     lie: ~3.3.0
     pako: ~1.0.2
     readable-stream: ~2.3.6
-    set-immediate-shim: ~1.0.1
-  checksum: 7b6e31bbe30c22491830b29e45642e2c8aba3bc45e1ebe855ceee593bc80c2dafab5ba0457d8b8889f70c7e227626da4bdca6160b2e4d3fdf7003c1aee989b72
+    setimmediate: ^1.0.5
+  checksum: c39d67f8c15be8f7b567ce1d36ac4de38fec9d6d55457c4ff1e5d5dd01d8d42f5969efea2502dea81c8663e8cef59f46601f046dbaaa4eb54fe18fa1d9953683
   languageName: node
   linkType: hard
 
@@ -20904,13 +20904,6 @@ resolve@^1.1.6:
   languageName: node
   linkType: hard
 
-"set-immediate-shim@npm:~1.0.1":
-  version: 1.0.1
-  resolution: "set-immediate-shim@npm:1.0.1"
-  checksum: be64b6800160830fec11aee59f88c7c20f9368510059673488f4373b2d83996337757bd9bf867356120d64762e2e6347272dd83438d452247e6f19be2fac36d2
-  languageName: node
-  linkType: hard
-
 "set-value@npm:^2.0.0, set-value@npm:^2.0.1":
   version: 2.0.1
   resolution: "set-value@npm:2.0.1"
@@ -20923,7 +20916,7 @@ resolve@^1.1.6:
   languageName: node
   linkType: hard
 
-"setimmediate@npm:^1.0.4":
+"setimmediate@npm:^1.0.4, setimmediate@npm:^1.0.5":
   version: 1.0.5
   resolution: "setimmediate@npm:1.0.5"
   checksum: 87884d8add4779fe47ccf763396a5bf875640ae34d80a10802da4de5c25d87647c12f6e7748fd5b8c143b57201caf2a5a781631456c228825f166ca305c12f20
