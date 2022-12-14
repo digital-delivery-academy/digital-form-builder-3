@@ -3900,7 +3900,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^14.11.8":
+"@types/node@npm:*":
   version: 14.14.20
   resolution: "@types/node@npm:14.14.20"
   checksum: 84a9fd73de978967723f951173ff4d07dca259941d3e37c7a3dbb236c09b3f2294bb2098678a806afe6fd6cac39a7d0a1d399f602378c951bd5d01ede535d570
@@ -3918,6 +3918,13 @@ __metadata:
   version: 14.17.4
   resolution: "@types/node@npm:14.17.4"
   checksum: 947ada8b39710c8fedf60f342b4ac1a08de8ebfbd4f09471b4e0006c2b0c7b832513e4dc2cdd455af5236910e2e725899bd9ce0aaecd097b2867d3e2ab62d8c6
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^18.11.15":
+  version: 18.11.15
+  resolution: "@types/node@npm:18.11.15"
+  checksum: c30bb1c67fca37a69d6c67389ef07bc8220cac0f180ce411effb7d22379068f58842f6109eccaa29e570d580ac8490b89845b4094a2b2b35229d741115f2a3fa
   languageName: node
   linkType: hard
 
@@ -4896,7 +4903,7 @@ __metadata:
     "@testing-library/user-event": ^12.6.0
     "@types/dagre": ^0.7.44
     "@types/hapi": ^18.0.5
-    "@types/node": ^14.11.8
+    "@types/node": ^18.11.15
     "@types/pino": ^6.3.8
     "@types/react": ^16.9.52
     "@types/react-dom": ^16.9.8
