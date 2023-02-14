@@ -2166,21 +2166,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@hapi/boom@npm:10.0.1":
+  version: 10.0.1
+  resolution: "@hapi/boom@npm:10.0.1"
+  dependencies:
+    "@hapi/hoek": ^11.0.2
+  checksum: bc5fdcdb697259d0628f34a69b798b9aad6e8065e1255295dfcb7fdf32f470f8a20609dded84b529ecf93b0a3c3e8176a2bc87253280ff94568873503c9b99e0
+  languageName: node
+  linkType: hard
+
 "@hapi/boom@npm:7.x.x":
   version: 7.4.11
   resolution: "@hapi/boom@npm:7.4.11"
   dependencies:
     "@hapi/hoek": 8.x.x
   checksum: 071313eb7602c0ca4d62fa0195267fadfe37c85e149e8e14f9de420d607f8f0925f1b7024d98e1834b680d7b5c84271f6ab18ad803291838f7ebed94afe10ec9
-  languageName: node
-  linkType: hard
-
-"@hapi/boom@npm:9.1.0":
-  version: 9.1.0
-  resolution: "@hapi/boom@npm:9.1.0"
-  dependencies:
-    "@hapi/hoek": 9.x.x
-  checksum: 77b566e295e7571d7c9b525b7c840016e6edeaa5c1e473af758ca945668d8a87a34c7452f29c3694495925d7af9f0a9bffbf217650051273abb3e77eb0c2716f
   languageName: node
   linkType: hard
 
@@ -2447,6 +2447,13 @@ __metadata:
   version: 9.1.1
   resolution: "@hapi/hoek@npm:9.1.1"
   checksum: e5be371c579bcdef755566b88ccd6bbf5c52ad2cc770e134ee909156cdcff2acf7aad3f4b5400d83742a27acc580a00a82d2cde8c812db0b0437e4e80fa0a6a0
+  languageName: node
+  linkType: hard
+
+"@hapi/hoek@npm:^11.0.2":
+  version: 11.0.2
+  resolution: "@hapi/hoek@npm:11.0.2"
+  checksum: 29324101ce3130804179afc5729d5b61a37378c5784eb2dd138516f8cf7dee48a5a4a5ce4b7add070199b1b3d3c23794c8822146e731035f959268e2262930df
   languageName: node
   linkType: hard
 
@@ -5068,7 +5075,7 @@ __metadata:
     "@babel/register": 7.10.3
     "@babel/runtime": 7.10.4
     "@hapi/bell": ^12.3.0
-    "@hapi/boom": 9.1.0
+    "@hapi/boom": 10.0.1
     "@hapi/catbox": 11.1.0
     "@hapi/catbox-memory": 5.0.0
     "@hapi/catbox-redis": 5.0.5
